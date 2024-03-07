@@ -30,7 +30,7 @@ jobs:
       run: git update-index --chmod=+x my-project2345/gradlew
 
     - name: Build with Gradle Wrapper
-      run: ./gradlew build
+      run: my-project2345/gradlew build
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
