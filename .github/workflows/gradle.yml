@@ -32,9 +32,6 @@ jobs:
     - name: Build with Gradle Wrapper
       run: java-app/gradlew build
 
-    - name: find 
-      run: sudo find / -type f -name "*.jar"
-
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
