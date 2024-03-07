@@ -34,8 +34,7 @@ jobs:
 
     - name: find 
       run: |
-            sudo cd /lib/build/libs
-            sudo ls -al
+            sudo ls lib/build/libs
             sudo find /lib/build/libs -name "my-app-1.0-SNAPSHOT.jar" 
 
     - name: Build and Push Docker Image
