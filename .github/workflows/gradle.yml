@@ -33,7 +33,7 @@ jobs:
       run: ./gradlew build
 
     - name: find 
-      run: sudo find / -name "my-app-1.0-SNAPSHOT.jar"
+      run: sudo find /lib/build/libs -name "my-app-1.0-SNAPSHOT.jar"
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
